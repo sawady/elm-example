@@ -2,10 +2,10 @@
 
 Ejemplo de aplicación utilizando Elm
 
-## Instalación
+### Instalación
 
 elm package install
 
-## Explorador
+### Explorador
 
 elm reactor
