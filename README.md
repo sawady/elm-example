@@ -2,10 +2,9 @@
 
 Ejemplo de aplicación utilizando Elm
 
-### Instalación
-
+### Setup
+npm install -g elm
 elm package install
 
-### Explorador
-
+### Explore
 elm reactor
