@@ -1,0 +1,23 @@
+{
+  "name": "elm-example",
+  "version": "1.0.0",
+  "description": "Ejemplo de aplicacion utilizando Elm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawady/elm-example.git"
+  },
+  "keywords": [
+    "elm",
+    "example"
+  ],
+  "author": "FSawady",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sawady/elm-example/issues"
+  },
+  "homepage": "https://github.com/sawady/elm-example#readme"
+}
