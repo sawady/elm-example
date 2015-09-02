@@ -4,7 +4,14 @@
   "description": "Ejemplo de aplicacion utilizando Elm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "postinstall": "bower install",
+
+    "prestart": "npm install",
+    "start": "http-server",
+
+    "pretest": "npm install"
   },
   "repository": {
     "type": "git",
@@ -16,6 +23,9 @@
   ],
   "author": "FSawady",
   "license": "GPL-3.0",
+  "devDependencies": {
+    "bower": "^1.5.2"
+  },
   "bugs": {
     "url": "https://github.com/sawady/elm-example/issues"
   },
