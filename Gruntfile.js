@@ -54,12 +54,25 @@ module.exports = function(grunt) {
           // https://github.com/taptapship/wiredep#configuration
         }
       }
-    }
+    },
+    ngsrc: {
+        target: {
+            src: ['app/angular/**/*.js'],
+            dest: ['tmp/index.html']
+        }
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-wiredep');
+
+  // TODO: hacer andar la inclusion automatica copiando el template de index a una carpeta dist
+  // grunt.loadNpmTasks('grunt-ngsrc');
+
+  // TODO: hacer andar la conversion de anotaciones para DI
+  // grunt.loadNpmTasks('grunt-ng-annotate');
+
   grunt.loadNpmTasks('grunt-elm');
 
   grunt.registerTask('default', ['jshint', 'elm', 'wiredep', 'watch']);
