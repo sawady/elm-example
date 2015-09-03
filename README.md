@@ -10,6 +10,5 @@ elm package install
 ### Explore Elm
 elm reactor
 
-### Run server
-Opcion 1: npm start
-Opcion 2: http-server
+### Compile and Run
+grunt
