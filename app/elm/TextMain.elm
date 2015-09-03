@@ -1,3 +1,5 @@
+module TextMain where
+
 import Html exposing (text)
 
 main =

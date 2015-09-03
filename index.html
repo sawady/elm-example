@@ -1,15 +1,58 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="elmApp">
 <head>
   <meta charset="utf-8">
   <title>Elm example</title>
+  <link rel="shortcut icon" type="image/png" href="/app/assets/favicon.png"/>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/app.css">
-  <script src="bower_components/angular/angular.js"></script>
+  <link rel="stylesheet" href="app/css/app.css">
 </head>
 <body>
+<div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img src="app/assets/elm-logo.svg" style="width: 24px;">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="app/assets/angular-logo.svg" style="width: 24px;">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="app/assets/bootstrap-logo.svg" style="width: 24px;">
+          </a>
+          <p class="navbar-text">Elm-Angular-Bootstrap example</p>
+        </div>
+      </div>
+    </nav>
 
+    <div ui-view class="container slide" style="padding-top: 80px;"></div>
 
-  <p class="navbar-text"><span class="label label-default">Nothing here {{'yet' + '!'}}</span></p>
+  <!-- dependencies -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+
+  <!-- elm -->
+  <script type="text/javascript" src="elm.js"></script>
+
+  <!-- app -->
+  <script src="app/angular/app.js"></script>
+
+  <!-- config -->
+
+  <!-- controllers -->
+  <script src="app/angular/controllers/home.js"></script>
+
+  <!-- services -->
+  <script src="app/angular/services/elm.js"></script>
+
+  <!-- directives -->
+  <script src="app/angular/directives/elm-counter.js"></script>
+
+</div>
+
 </body>
 </html>
