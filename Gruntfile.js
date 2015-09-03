@@ -58,9 +58,23 @@ module.exports = function(grunt) {
     ngsrc: {
         target: {
             src: ['app/angular/**/*.js'],
+            // TODO: FIXME
             dest: ['tmp/index.html']
         }
     },
+    'http-server': {
+        dev: {
+            // the server root directory
+            root: './',
+            port: 8080,
+            host: '0.0.0.0',
+            showDir : false,
+            autoIndex: true,
+            ext: 'html',
+            // run in parallel with other tasks
+            runInBackground: true,
+        }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -74,6 +88,7 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-ng-annotate');
 
   grunt.loadNpmTasks('grunt-elm');
+  grunt.loadNpmTasks('grunt-http-server');
 
-  grunt.registerTask('default', ['jshint', 'elm', 'wiredep', 'watch']);
+  grunt.registerTask('default', ['jshint', 'elm', 'wiredep', 'http-server', 'watch']);
 };
