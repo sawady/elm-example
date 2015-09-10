@@ -1,6 +1,6 @@
 # elm-example
 
-Ejemplo de aplicación utilizando Elm
+Ejemplo de aplicación utilizando Elm (en SO basado en Debian de 32-bits no funciona)
 
 ### Setup
 
